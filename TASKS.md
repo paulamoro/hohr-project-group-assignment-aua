@@ -58,6 +58,24 @@ This writing uses Markdown, for help go to [Mastering Markdown](https://guides.g
 ***
 You plan to start hiring workers next year. During this very first year, you are its only workers, all managers. Yearly staff movements were, on average, as follows: Out of 15 managers, 5 stayed in the same occupation, 5 moved to operators, and 5 left the firm; Out of 20 engineers, 10 stayed in the same occupation, 2 moved to managers, 5 moved to operators, and 3 left the firm; Out of 50 operators, 45 stayed in the same occupation and 5 left the firm. Using this information, predict how many managers, engineers, and operators you will have company will have in one year from now.
 ***
+ We have introduced the following data in payton in order to predict the number of available workers in our firm next year.In the present we are 4 workers on the firm, 2 managers, 1 engineer and 1 operator. 
+ 
+ 
+D = numpy.array([[15,0,0],[0,20,0],[0,0,50]])
+M = numpy.array([[5,2,0],[0,10,0],[5,5,45]])
+b = numpy.array([[2],[1],[1]])
+
+
+The obtained results are the following: 
+
+0.76666667
+0.5 
+1.81666667
+
+
+As we are dealing with people, we need to round the numbers to integers. Therefore, the predicted number of managers is 1, 1 for engineers and 2 for operators. 
+
+
 
 ## Task 4
 * Objective: forecast your firm's need for workers and anticipate mismatches using Python (click the black button at the top of the README.md file)
